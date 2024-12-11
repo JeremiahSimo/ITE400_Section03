@@ -71,7 +71,7 @@ footer {
 </head>
 <body>
 
-<h2>Abduwlahab, mohammadjarer A.</h2>
+<h2>ABO-ABO, CRISTIAN C.</h2>
 <p>this is our website</p>
 
 <header>
@@ -84,6 +84,8 @@ footer {
     <li><a href="home.php?page=london" class="<?php echo ($_GET['page'] ?? '') === 'london'  ? 'active' : ''; ?>">London</a></li>
       <li><a href="home.php?page=paris" class="<?php echo ($_GET['page'] ?? '') === 'paris'  ? 'active' : ''; ?>">Paris</a></li>
       <li><a href="home.php?page=tokyo" class="<?php echo ($_GET['page'] ?? '') === 'tokyo'  ? 'active' : ''; ?>">Tokyo</a></li>
+      <li><a href="home.php?page=info" class="<?php echo ($_GET['page'] ?? '') === 'info'  ? 'active' : ''; ?>">Info</a></li>
+
     </ul>
   </nav>
   
@@ -103,6 +105,9 @@ footer {
                         case 'tokyo':
                             include 'tokyo.php';
                             break;
+                            case 'info':
+                              include 'info.php';
+                              break;
             
         }
     }
