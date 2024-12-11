@@ -84,7 +84,7 @@ footer {
     <li><a href="home.php?page=london" class="<?php echo ($_GET['page'] ?? '') === 'london'  ? 'active' : ''; ?>">London</a></li>
       <li><a href="home.php?page=paris" class="<?php echo ($_GET['page'] ?? '') === 'paris'  ? 'active' : ''; ?>">Paris</a></li>
       <li><a href="home.php?page=tokyo" class="<?php echo ($_GET['page'] ?? '') === 'tokyo'  ? 'active' : ''; ?>">Tokyo</a></li>
-      <li><a href="home.php?page=branch" class="<?php echo ($_GET['page'] ?? '') === 'tokyo'  ? 'active' : ''; ?>">branch</a></li>
+      <li><a href="home.php?page=Rugay_branch" class="<?php echo ($_GET['page'] ?? '') === 'Rugay_branch'  ? 'active' : ''; ?>">branch</a></li>
     </ul>
   </nav>
   
