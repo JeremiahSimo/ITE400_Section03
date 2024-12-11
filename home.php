@@ -71,9 +71,8 @@ footer {
 </head>
 <body>
 
-<h2>James Oliver Emano</h2>
-<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
-<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+<h2>Emano, James Oliver M.</h2>
+<p>This is our website</p>
 
 <header>
   <h2>Cities</h2>
@@ -86,6 +85,7 @@ footer {
       <li><a href="home.php?page=paris" class="<?php echo ($_GET['page'] ?? '') === 'paris'  ? 'active' : ''; ?>">Paris</a></li>
       <li><a href="home.php?page=tokyo" class="<?php echo ($_GET['page'] ?? '') === 'tokyo'  ? 'active' : ''; ?>">Tokyo</a></li>
       <li><a href="home.php?page=berlin" class="<?php echo ($_GET['page'] ?? '') === 'berlin'  ? 'active' : ''; ?>">Berlin</a></li>
+      <li><a href="home.php?page=personal_info" class="<?php echo ($_GET['page'] ?? '') === 'personal_info'  ? 'active' : ''; ?>">My Info</a></li>
     </ul>
   </nav>
   
@@ -105,6 +105,14 @@ footer {
                         case 'tokyo':
                             include 'tokyo.php';
                             break;
+                            case 'berlin':
+                              include 'berlin.php';
+                              break;
+                              case 'personal_info':
+                                include 'personal_info.php';
+                                break;
+                
+              
             
         }
     }
