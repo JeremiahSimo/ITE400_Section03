@@ -71,8 +71,6 @@ footer {
 </head>
 <body>
 
-<h2>Jeremiah B. Simo</h2>
-<p>this is our website</p>
 
 <header>
   <h2>Cities</h2>
@@ -104,8 +102,8 @@ footer {
                         case 'tokyo':
                             include 'tokyo.php';
                             break;
-                            case 'Rugay_branch':
-                              include 'Rugay_branch.php';
+                            case 'info':
+                              include 'info.php';
                               break;
             
         }
