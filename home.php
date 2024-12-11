@@ -87,15 +87,13 @@ footer {
     <li><a href="home.php?page=london" class="<?php echo ($_GET['page'] ?? '') === 'london'  ? 'active' : ''; ?>">London</a></li>
       <li><a href="home.php?page=paris" class="<?php echo ($_GET['page'] ?? '') === 'paris'  ? 'active' : ''; ?>">Paris</a></li>
       <li><a href="home.php?page=tokyo" class="<?php echo ($_GET['page'] ?? '') === 'tokyo'  ? 'active' : ''; ?>">Tokyo</a></li>
+      <li><a href="home.php?page=mynewfile" class="<?php echo ($_GET['page'] ?? '') === 'mynewfile'  ? 'active' : ''; ?>">Mynewfile</a></li>
     </ul>
   </nav>
   
   <article> 
 
-  <h1>Micah D. Lago</h1>
-
-  <p>Currently studying at PHINMA COC</p>
-  <p>BSIT student</p>
+ 
     <!-- wala nanih sulod -->
      <?php
         if (isset($_GET['page'])){
@@ -111,6 +109,9 @@ footer {
                         case 'tokyo':
                             include 'tokyo.php';
                             break;
+                            case 'mynewfile':
+                              include 'mynewfile.php';
+                              break;
             
         }
     }
