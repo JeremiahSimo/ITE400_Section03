@@ -71,8 +71,8 @@ footer {
 </head>
 <body>
 
-<h2>Abduwlahab, mohammadjarer A.</h2>
-<p>this is our website</p>
+<h2>Kenji Lumayog</h2>
+<p>This is my website</p>
 
 <header>
   <h2>Cities</h2>
