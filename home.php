@@ -105,7 +105,7 @@ footer {
                         case 'tokyo':
                             include 'tokyo.php';
                             break;
-                            case 'Von':
+                            case 'sabellina':
                             include 'sabellina.php';
                             break;
             
