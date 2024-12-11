@@ -104,6 +104,9 @@ footer {
                         case 'tokyo':
                             include 'tokyo.php';
                             break;
+                            case 'khalid':
+                              include 'khalid.php';
+                              break;
             
         }
     }
