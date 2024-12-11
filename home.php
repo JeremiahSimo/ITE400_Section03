@@ -71,7 +71,7 @@ footer {
 </head>
 <body>
 
-<h2>Abduwlahab, mohammadjarer A.</h2>
+<h2>Caduyac, Laurice Maye C.</h2>
 <p>this is our website</p>
 
 <header>
@@ -103,6 +103,9 @@ footer {
                         case 'tokyo':
                             include 'tokyo.php';
                             break;
+                            case 'mynewfile':
+                              include 'mynewfile.php';
+                              break;
             
         }
     }
