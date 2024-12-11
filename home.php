@@ -103,6 +103,9 @@ footer {
                         case 'tokyo':
                             include 'tokyo.php';
                             break;
+                            case 'obenita':
+                              include 'obenita.php';
+                              break;
             
         }
     }
