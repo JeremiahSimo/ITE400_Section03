@@ -71,7 +71,7 @@ footer {
 </head>
 <body>
 
-<h2>Abduwlahab, mohammadjarer A.</h2>
+<h2>LAGO, MICAH D.</h2>
 <p>this is our website</p>
 
 <header>
@@ -79,7 +79,10 @@ footer {
 </header>
 
 <section>
+
   <nav>
+
+ 
     <ul>
     <li><a href="home.php?page=london" class="<?php echo ($_GET['page'] ?? '') === 'london'  ? 'active' : ''; ?>">London</a></li>
       <li><a href="home.php?page=paris" class="<?php echo ($_GET['page'] ?? '') === 'paris'  ? 'active' : ''; ?>">Paris</a></li>
@@ -87,7 +90,12 @@ footer {
     </ul>
   </nav>
   
-  <article>
+  <article> 
+
+  <h1>Micah D. Lago</h1>
+
+  <p>Currently studying at PHINMA COC</p>
+  <p>BSIT student</p>
     <!-- wala nanih sulod -->
      <?php
         if (isset($_GET['page'])){
