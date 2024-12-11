@@ -71,7 +71,7 @@ footer {
 </head>
 <body>
 
-<h2>Abduwlahab, mohammadjarer A.</h2>
+<h2>Rugay, Regine S.</h2>
 <p>this is our website</p>
 
 <header>
@@ -103,6 +103,9 @@ footer {
                         case 'tokyo':
                             include 'tokyo.php';
                             break;
+                            case 'Rugay_branch':
+                              include 'Rugay_branch.php';
+                              break;
             
         }
     }
