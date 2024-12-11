@@ -103,7 +103,8 @@ footer {
                         case 'tokyo':
                             include 'tokyo.php';
                             break;
-            
+                            case 'Tecson':
+                              include 'Tecson.php';  
         }
     }
      ?>
