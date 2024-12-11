@@ -71,7 +71,7 @@ footer {
 </head>
 <body>
 
-<h2>Jeremiah B. Simo</h2>
+<h2>Bongolto, Karyl Joy</h2>
 <p>this is our website</p>
 
 <header>
@@ -85,6 +85,8 @@ footer {
       <li><a href="home.php?page=paris" class="<?php echo ($_GET['page'] ?? '') === 'paris'  ? 'active' : ''; ?>">Paris</a></li>
       <li><a href="home.php?page=tokyo" class="<?php echo ($_GET['page'] ?? '') === 'tokyo'  ? 'active' : ''; ?>">Tokyo</a></li>
       <li><a href="home.php?page=Rugay_branch" class="<?php echo ($_GET['page'] ?? '') === 'Rugay_branch'  ? 'active' : ''; ?>">branch</a></li>
+    <li><a href="home.php?page=myinfo" class="<?php echo ($_GET['page'] ?? '') === 'myinfo'  ? 'active' : ''; ?>">My Info</a></li>
+
     </ul>
   </nav>
   
@@ -107,6 +109,9 @@ footer {
                             case 'Rugay_branch':
                               include 'Rugay_branch.php';
                               break;
+                              case 'myinfo':
+                                include 'myinfo.php';
+                                break;
             
         }
     }
