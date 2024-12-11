@@ -1,5 +1,4 @@
-<h1>Jeremiah B. Simo</h1>
-<p>CITE INSTRUCTOR</p>
-<p>CDO-CARMEN</p>
-<p>MALE</p>
+<h1>Nielben Jan Ong</h1>
+<p>BSIT Student</p>
+
 
