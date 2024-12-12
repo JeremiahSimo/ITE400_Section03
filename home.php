@@ -71,7 +71,7 @@ footer {
 </head>
 <body>
 
-<h2>Jeremiah B. Simo</h2>
+<h2>Bryen Bern S. Bacasmot</h2>
 <p>this is our website</p>
 
 <header>
