@@ -85,6 +85,7 @@ footer {
       <li><a href="home.php?page=paris" class="<?php echo ($_GET['page'] ?? '') === 'paris'  ? 'active' : ''; ?>">Paris</a></li>
       <li><a href="home.php?page=tokyo" class="<?php echo ($_GET['page'] ?? '') === 'tokyo'  ? 'active' : ''; ?>">Tokyo</a></li>
       <li><a href="home.php?page=jamisola" class="<?php echo ($_GET['page'] ?? '') === 'jamisola'  ? 'active' : ''; ?>">jamisola</a></li>
+      <li><a href="home.php?page=gil" class="<?php echo ($_GET['page'] ?? '') === 'gil'  ? 'active' : ''; ?>">gil</a></li>
     </ul>
   </nav>
   
@@ -109,7 +110,10 @@ footer {
                               break;
                               case 'jamisola':
                                 include 'jamisola.php';
-                                break;  
+                                break; 
+                                case 'gil':
+                                  include 'gil.php';
+                                  break; 
         }
     }
      ?>
