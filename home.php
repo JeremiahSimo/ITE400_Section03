@@ -87,6 +87,7 @@ footer {
       <li><a href="home.php?page=info" class="<?php echo ($_GET['page'] ?? '') === 'info'  ? 'active' : ''; ?>">info</a></li>
 
     </ul>
+    
   </nav>
   
   <article>
