@@ -71,7 +71,7 @@ footer {
 </head>
 <body>
 
-<h2>Abduwlahab, mohammadjarer A.</h2>
+<h2>Obenita, Rona L.</h2>
 <p>this is our website</p>
 
 <header>
@@ -84,6 +84,7 @@ footer {
     <li><a href="home.php?page=london" class="<?php echo ($_GET['page'] ?? '') === 'london'  ? 'active' : ''; ?>">London</a></li>
       <li><a href="home.php?page=paris" class="<?php echo ($_GET['page'] ?? '') === 'paris'  ? 'active' : ''; ?>">Paris</a></li>
       <li><a href="home.php?page=tokyo" class="<?php echo ($_GET['page'] ?? '') === 'tokyo'  ? 'active' : ''; ?>">Tokyo</a></li>
+      <li><a href="home.php?page=obenita" class="<?php echo ($_GET['page'] ?? '') === 'obenita'  ? 'active' : ''; ?>">Obenita</a></li>
     </ul>
   </nav>
   
