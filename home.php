@@ -54,10 +54,10 @@ section::after {
 
 /* Style the footer */
 footer {
-  background-color: #777;
+  background-color: #77;
   padding: 10px;
   text-align: center;
-  color: white;
+  color: beige;
 }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
