@@ -19,7 +19,7 @@ header {
   padding: 30px;
   text-align: center;
   font-size: 35px;
-  color: white;
+  color: blueviolet;
 }
 
 /* Create two columns/boxes that floats next to each other */
