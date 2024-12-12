@@ -71,7 +71,7 @@ footer {
 </head>
 <body>
 
-<h2>Rugay, Regine S.</h2>
+<h2>Romarez,Junh Carlo </h2>
 <p>this is our website</p>
 
 <header>
