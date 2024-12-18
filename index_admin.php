@@ -360,10 +360,15 @@
       </li><!-- End Components Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed <?php echo ($_GET['page'] ?? '') === 'registration'  ? '' : 'collapsed'; ?>" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-journal-text"></i><span>Forms</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <ul id="forms-nav" class="nav-content collapse <?php echo ($_GET['page'] ?? '') === 'registration' ? 'show' : ''; ?>" data-bs-parent="#sidebar-nav">
+        <li>
+            <a href="index_admin.php?page=registration" class="<?php echo ($_GET['page'] ?? '') === 'registration' ? 'active' : ''; ?>">
+              <i class="bi bi-circle"></i><span>Registration Form</span>
+            </a>
+          </li>
           <li>
             <a href="forms-elements.html">
               <i class="bi bi-circle"></i><span>Form Elements</span>
@@ -388,20 +393,16 @@
       </li><!-- End Forms Nav -->
 
       <li class="nav-item">
-        <a class="nav-link " data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link <?php echo ($_GET['page'] ?? '') === 'member_list'  ? '' : 'collapsed'; ?>" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="tables-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
+        <ul id="tables-nav" class="nav-content collapse <?php echo ($_GET['page'] ?? '') === 'member_list' ? 'show' : ''; ?>" data-bs-parent="#sidebar-nav">
           <li>
-            <a href="tables-general.html">
-              <i class="bi bi-circle"></i><span>General Tables</span>
+            <a href="index_admin.php?page=member_list" class="<?php echo ($_GET['page'] ?? '') === 'member_list' ? 'active' : ''; ?>">
+              <i class="bi bi-circle"></i><span>Registered Member List</span>
             </a>
           </li>
-          <li>
-            <a href="index_admin.php?page=registration" class="active">
-              <i class="bi bi-circle"></i><span>Registration Form</span>
-            </a>
-          </li>
+        
         </ul>
       </li><!-- End Tables Nav -->
 
@@ -534,6 +535,9 @@
                   case "registration":
                     include "modules/registration.php";
                     break;
+                    case "member_list":
+                      include "modules/member_list.php";
+                      break;
                 }
               }
 

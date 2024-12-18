@@ -7,7 +7,7 @@ if(isset($_POST["btn_submit"])){
     $birthday=$_POST["input_bday"];
 
     $sql = "INSERT INTO registration_table (name, email, birthday)
-VALUES ('$fullname', '$email', '$birthday')";
+VALUES ('$fullname', '$email', '$birthday ')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
@@ -28,19 +28,19 @@ $conn->close();
 <form class="row g-3" method="POST" action="index_admin.php?page=registration">
   <div class="col-md-12">
     <div class="form-floating">
-      <input type="text" class="form-control" name="input_fullname" id="floatingName" placeholder="Your Name">
+      <input type="text" class="form-control" name="input_fullname" id="floatingName" placeholder="Your Name" required>
       <label for="floatingName">Your Name</label>
     </div>
   </div>
   <div class="col-md-6">
     <div class="form-floating">
-      <input type="email" class="form-control" name="input_email" id="floatingEmail" placeholder="Your Email">
+      <input type="email" class="form-control" name="input_email" id="floatingEmail" placeholder="Your Email" required>
       <label for="floatingEmail">Your Email</label>
     </div>
   </div>
   <div class="col-md-6">
     <div class="form-floating">
-      <input type="date" class="form-control" name="input_bday" id="floatingPassword" placeholder="Password">
+      <input type="date" class="form-control" name="input_bday" id="floatingPassword" placeholder="Password" required>
       <label for="floatingPassword">Birthday</label>
     </div>
   </div>
