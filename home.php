@@ -107,8 +107,8 @@ footer {
                             case 'zapico':
                               include 'zapico.php';
                               break;
-            
-        }
+
+                                    }
     }
      ?>
   </article>
