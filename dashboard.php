@@ -1,12 +1,8 @@
 <div class="main-content">
     <div class="header">
-        <h2>Expired Products</h2>
-
+        <h2>Dashboard</h2>
     </div>
 
-
-
-    
 
 
     <div class="students-container">

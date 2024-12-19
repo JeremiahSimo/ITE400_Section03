@@ -24,7 +24,7 @@
 
     <!-- Search Bar -->
    
-        <input type="text" name="search_query" class="form-control" placeholder="Search student Name..." />
+        <input type="text" name="search_query" class="form-control" placeholder="Search Product Name..." />
         <button type="submit" name="search" class="btn btn-primary ml-2">Search</button>
     </form>
 </div>
@@ -35,9 +35,7 @@
     <a class="btn btn-primary mb-3 w-100 <?php echo ($_GET['page'] ?? '') === 'dashboard' ? 'active' : ''; ?>" href="design.php?page=dashboard">
     <i class="fas fa-edit"></i> Dashboard
 </a>
-        <a class="btn btn-primary mb-3 w-100 <?php echo ($_GET['page'] ?? '') === 'sales' ? 'active' : ''; ?>" href="design.php?page=sales">
-    <i class="fas fa-edit"></i> Sales Report
-</a>
+
 <a class="btn btn-primary mb-3 w-100 <?php echo ($_GET['page'] ?? '') === 'expired' ? 'active' : ''; ?>" href="design.php?page=expired">
     <i class="fas fa-edit"></i> Expired Products
 </a>
@@ -45,10 +43,14 @@
 <a class="btn btn-primary mb-3 w-100 <?php echo ($_GET['page'] ?? '') === 'inventory' ? 'active' : ''; ?>" href="design.php?page=inventory">
     <i class="fas fa-edit"></i> Inventory
 </a>
+<a class="btn btn-primary mb-3 w-100 <?php echo ($_GET['page'] ?? '') === 'sales' ? 'active' : ''; ?>" href="design.php?page=sales">
+    <i class="fas fa-edit"></i> Sales Report
+</a>
     </div>
     <a class="btn btn-danger text-white w-100" href="../actions/logout.php">
         <i class="fas fa-sign-out-alt"></i> Log Out
     </a>
+    
 </nav>
 
 
