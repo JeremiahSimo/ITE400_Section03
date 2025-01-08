@@ -1,5 +1,5 @@
 
     <h1>Paris</h1>
-    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    <p>Paris is the capital city of France and one of the most famous cities in the world. It is known for its rich history, culture, and art, with a metropolitan area home to over 11 million inhabitants.</p>
+    <p>Located on the River Seine, Paris has been a major European center for art, fashion, and intellectual thought for centuries. The city’s history dates back to its founding in the 3rd century BC by the Parisii, a Celtic tribe.</p>
   

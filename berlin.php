@@ -1,3 +1,3 @@
 <h1>Berlin</h1>
-    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    <p>Berlin is the capital city of Germany and one of the country’s 16 federal states. It is the largest city in Germany by both area and population, with over 3.5 million inhabitants.</p>
+    <p>Located on the River Spree, Berlin has a rich history marked by its role in European politics and culture. It became the capital of a unified Germany in 1990, following the fall of the Berlin Wall. The city is known for its vibrant arts scene, historical landmarks, and as a symbol of unity and resilience.</p>

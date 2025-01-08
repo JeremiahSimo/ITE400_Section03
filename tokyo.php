@@ -1,5 +1,5 @@
 
     <h1>Tokyo</h1>
-    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    <p>Tokyo is the capital city of Japan and one of the most populous cities in the world, with a metropolitan area housing over 37 million people.</p>
+    <p>Situated on the eastern coast of the island of Honshu, Tokyo has evolved from a small fishing village, originally called Edo, to a global economic powerhouse. It became the capital of Japan in the 19th century and is now a hub for technology, fashion, and culture.</p>
   
