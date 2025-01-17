@@ -71,8 +71,8 @@ footer {
 </head>
 <body>
 
-<h2>Jeremiah B. Simo</h2>
-<p>this is our website</p>
+<h2>Medina VI, Angel A</h2>
+<p>My Website</p>
 
 <header>
   <h2>Cities</h2>
@@ -81,10 +81,10 @@ footer {
 <section>
   <nav>
     <ul>
-    <li><a href="home.php?page=london" class="<?php echo ($_GET['page'] ?? '') === 'london'  ? 'active' : ''; ?>">London</a></li>
-      <li><a href="home.php?page=paris" class="<?php echo ($_GET['page'] ?? '') === 'paris'  ? 'active' : ''; ?>">Paris</a></li>
-      <li><a href="home.php?page=tokyo" class="<?php echo ($_GET['page'] ?? '') === 'tokyo'  ? 'active' : ''; ?>">Tokyo</a></li>
-      <li><a href="home.php?page=info" class="<?php echo ($_GET['page'] ?? '') === 'info'  ? 'active' : ''; ?>">Info</a></li>
+    <li><a href="medina_home.php?page=london" class="<?php echo ($_GET['page'] ?? '') === 'london'  ? 'active' : ''; ?>">London</a></li>
+      <li><a href="medina_home.php?page=paris" class="<?php echo ($_GET['page'] ?? '') === 'paris'  ? 'active' : ''; ?>">Paris</a></li>
+      <li><a href="medina_home.php?page=tokyo" class="<?php echo ($_GET['page'] ?? '') === 'tokyo'  ? 'active' : ''; ?>">Tokyo</a></li>
+      <li><a href="medina_home.php?page=myinfo" class="<?php echo ($_GET['page'] ?? '') === 'myinfo'  ? 'active' : ''; ?>">My Info</a></li>
     </ul>
   </nav>
   
@@ -96,16 +96,16 @@ footer {
             // Include the corresponding content based on the requested page
             switch ($page) {
                 case 'london':
-                    include 'london.php';
+                    include 'medina_london.php';
                     break;
                     case 'paris':
-                        include 'paris.php';
+                        include 'medina_paris.php';
                         break;
                         case 'tokyo':
-                            include 'tokyo.php';
+                            include 'medina_tokyo.php';
                             break;
-                            case 'info':
-                              include 'info.php';
+                            case 'myinfo':
+                              include 'medina_myinfo.php';
                               break;
             
         }
@@ -120,4 +120,3 @@ footer {
 
 </body>
 </html>
-
