@@ -1,0 +1,143 @@
+import 'dart:math';
+
+import 'package:flutter/material.dart';
+
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: MyHomePage(),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  TextEditingController _answerController = TextEditingController();
+  int _n1 = 0;
+  int _n2 = 0;
+  int _min = 1;
+  int _max = 9;
+
+  String _remarks = "";
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: const Text(
+            'Hello World',
+            style: TextStyle(color: Colors.white),
+          ),
+          centerTitle: true,
+          backgroundColor: Colors.blue,
+          elevation: 10.0,
+        ),
+        body: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Column(
+              children: [
+                const Text(
+                  "Addition for Kids",
+                  style: TextStyle(color: Colors.blue, fontSize: 30.0),
+                ),
+                const SizedBox(
+                  height: 20.0,
+                ),
+                Text(
+                  _n1.toString(),
+                  style: const TextStyle(
+                    fontSize: 30.0,
+                  ),
+                ),
+                const SizedBox(
+                  height: 20.0,
+                ),
+                Text(
+                  _n2.toString(),
+                  style: const TextStyle(
+                    fontSize: 30.0,
+                  ),
+                ),
+                const SizedBox(
+                  height: 20.0,
+                ),
+                TextField(
+                  controller: _answerController,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    fontSize: 15.0,
+                  ),
+                  decoration: InputDecoration(
+                    labelText: " Your Answer ",
+                    hintText: "Enter your answer here...",
+                    border: OutlineInputBorder(
+                      borderSide: const BorderSide(
+                        color: Colors.red,
+                        width: 1.0,
+                      ),
+                      borderRadius: BorderRadius.circular(5.0),
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          setState(() {
+                            _n1 = Random().nextInt(_max - _min + 1) + _min;
+                            _n2 = Random().nextInt(_max - _min + 1) + _min;
+                            _answerController.clear();
+                            _remarks = "";
+                          });
+                        },
+                        child: const Text("Generate"),
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 10.0,
+                    ),
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          int answer = int.parse(_answerController.text);
+                          setState(() {
+                            if (answer == _n1 + _n2) {
+                              _remarks = "Correct!";
+                            } else {
+                              _remarks = "Wrong!";
+                            }
+                          });
+                        },
+                        child: const Text("Check"),
+                      ),
+                    ),
+                  ],
+                ),
+                Text(
+                  _remarks,
+                  style: const TextStyle(fontSize: 40.0),
+                ),
+              ],
+            ),
+          ),
+        ));
+  }
+}
+
